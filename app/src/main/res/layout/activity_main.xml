@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#84b1c1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#087DCA"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_up_left"
+                android:onClick="oscilloscopeStart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/button_up_left"
+                android:textAppearance="@style/textAppearance_button_p1" />
+
+            <Button
+                android:id="@+id/button_up_middle"
+                android:onClick="analyserStart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/button_up_middle"
+                android:textAppearance="@style/textAppearance_button_p1" />
+
+            <Button
+                android:id="@+id/button_up_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/button_up_right"
+                android:textAppearance="@style/textAppearance_button_p1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_signal_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="0dp"
+            android:layout_weight="1"
+            android:background="@color/warning_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/no_input_signal"
+            android:textAppearance="@style/textAppearance_warning" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_down_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/button_down_left"
+                android:textAppearance="@style/textAppearance_button_p1" />
+
+            <Button
+                android:id="@+id/button_down_middle"
+                android:onClick="function5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/button_down_middle"
+                android:textAppearance="@style/textAppearance_button_p1" />
+
+            <Button
+                android:id="@+id/button_down_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/button_down_right"
+                android:textAppearance="@style/textAppearance_button_p1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

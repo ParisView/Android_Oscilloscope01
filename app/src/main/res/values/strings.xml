@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mobile Oscilloscope</string>
+    <string name="no_input_signal">No input signal</string>
+    <string name="button_up_left">Oscilloscope</string>
+    <string name="button_up_middle">Spectrum analyser</string>
+    <string name="button_up_right">Generator</string>
+    <string name="button_down_left">Connect</string>
+    <string name="button_down_middle">Function 5</string>
+    <string name="button_down_right">Settings</string>
+    <string name="analyserActButtonText">++number</string>
+    <string name="defaultString">DEFAULT</string>
+</resources>
