@@ -1,0 +1,53 @@
+
+=====================================================
+oscilloscope functionality
+
+channel
+1. channel 1
+2. channel 2
+
+coupling
+1. ac
+2. dc
+3. gnd
+
+vertical
+1. V/div
+2. Position of zero amplitude on the voltage axis
+
+horizontal
+1. Sec/div 
+2. position of sync point on the time axis
+
+trigger
+1. trigger level
+2. trigger edge (rising, falling)
+3. on/off
+4. trigger source
+
+mode
+1. run continuous
+2. run single armed
+3. run single triggered
+4. stop
+-------------------------------------
+class OscilloscopeWindow ??? or just Window for oscilloscope and analyser and generator?
+
+class Channel ??? or Track for oscilloscope and analyser and generator?
+
+class DataProvider that provides data points to channel (track)
+
+class OscilloscopeSettingsHolder that holds the settings for current instantiation of oscilloscope
+
+class AnalyserSettingsHolder that holds the settings for current instantiation of analyser
+
+class GeneratorSettingsHolder that holds the settings for current instantiation of generator
+
+class BlueToothConnector that connects via bluetooth with hardware
+
+=====================================================
+=====================================================
+spectrum analyser functionality
+
+
+=====================================================
