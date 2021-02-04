@@ -30,6 +30,9 @@ mode
 2. run single armed
 3. run single triggered
 4. stop
+
+file
+1. save track as picture
 -------------------------------------
 class OscilloscopeWindow ??? or just Window for oscilloscope and analyser and generator?
 
@@ -44,6 +47,8 @@ class AnalyserSettingsHolder that holds the settings for current instantiation o
 class GeneratorSettingsHolder that holds the settings for current instantiation of generator
 
 class BlueToothConnector that connects via bluetooth with hardware
+
+class TrackSaver saves track on SDCard as picture
 
 =====================================================
 =====================================================
