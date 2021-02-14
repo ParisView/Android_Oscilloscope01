@@ -23,32 +23,96 @@ trigger
 1. trigger level
 2. trigger edge (rising, falling)
 3. on/off
-4. trigger source
+4. trigger source (channel1, channel2, generator)
 
 mode
-1. run continuous
-2. run single armed
-3. run single triggered
-4. stop
+1. run continuous (if trigger on, then run with synchronization)
+2. stop
+3. run single armed (after trigger goes to stop)
+
 
 file
 1. save track as picture
+2. load a saved track as back groud for current oscillogram
 -------------------------------------
+class MainActivity
+
+class BlueToothConnector that connects via bluetooth with hardware
+or app level fun blueToothConnect ??? or wifiConnect ????
+
+
+class OscilloscopeActivity
+
+class OscilloscopeActivityViewModel
+
+object OscilloscopeSettingsHolder that holds the settings for all instantiations of oscilloscope
+if quit from activity button pressed, then this object must be destroyed on finishing the activity
+
+class OscilloscopeActivityGLSurfaceView
+
+class OscilloscopeActivityOpenGLRenderer
+
+
+
+class AnalyserActivity
+
+class AnalyserActivityViewModel
+
+object AnalyserSettingsHolder that holds the settings for all instantiations of analyser
+if quit from activity button pressed, then this object must be destroyed on finishing the activity
+
+class AnalyserActivityGLSurfaceView
+
+class AnalyserActivityOpenGLRenderer
+
+
+
+class GeneratorActivity
+
+class GeneratorActivityViewModel
+
+object GeneratorSettingsHolder that holds the settings for all instantiations of generator
+if quit from activity button pressed, then this object must be destroyed on finishing the activity
+
+class GeneratorActivityGLSurfaceView
+
+class GeneratorActivityOpenGLRenderer
+
+
+
+class SettingsActivity based on SharedPreference or Preference if there are some preferences to save????
+disabled for now
+
+
+
 class OscilloscopeWindow ??? or just Window for oscilloscope and analyser and generator?
 
-class Channel ??? or Track for oscilloscope and analyser and generator?
+class SignalTrack for oscilloscope and analyser and generator
+
+class or app level fun ScaleTrackVertical scales track vertically for display
+
+class or app level fun ScaleTrackHorizontal scales track horizontally for display
+
+class SignalProcessing (empty at first, functionality and structure is to be determined later)
 
 class DataProvider that provides data points to channel (track)
 
-class OscilloscopeSettingsHolder that holds the settings for current instantiation of oscilloscope
-
-class AnalyserSettingsHolder that holds the settings for current instantiation of analyser
-
-class GeneratorSettingsHolder that holds the settings for current instantiation of generator
-
-class BlueToothConnector that connects via bluetooth with hardware
-
 class TrackSaver saves track on SDCard as picture
+or make only an app level fun trackSaver and call it in each activity
+
+class TrackLoader loads track from file and puts it as background for current oscillogram
+
+=====================================================
+=====================================================
+permissions
+
+BLUETOOTH
+
+BLUETOOTH_ADMIN
+
+ACCESS_FINE_LOCATION
+
+use companion device pairing?
 
 =====================================================
 =====================================================
