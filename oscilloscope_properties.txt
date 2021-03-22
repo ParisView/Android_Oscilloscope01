@@ -22,14 +22,16 @@ horizontal
 trigger
 1. trigger level
 2. trigger edge (rising, falling)
-3. on/off
+3. off/on/auto
 4. trigger source (channel1, channel2, generator)
 
 mode
 1. run continuous (if trigger on, then run with synchronization)
 2. stop
-3. run single armed (after trigger goes to stop)
 
+single (must be in run mode, in stop mode this button is gray)
+1. single armed
+2. single triggered
 
 file
 1. save track as picture
